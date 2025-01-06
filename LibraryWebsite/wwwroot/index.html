@@ -1,0 +1,71 @@
+<!--
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This markup file contains the starting code for Assignment 4.
+ * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4: Data from JSON Data Source</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="container">
+	<header id="pg-header">
+		 
+		<h1 id="mainh1">Blueman Library</h1>
+
+		<img src="img/books.jpg" alt="" id="books">
+		<!-- "Library" by Stewart
+		Date used: December 2nd 2023
+		https://openverse.org/image/69e0d496-1c97-454c-b343-943a5096701a?q=library-->
+
+		<img src="img/longBooks.jpg" alt="" id="books2">
+		<!-- "Our Library, Shelf 5" by eloquentlight
+		Date used: December 2nd 2023
+		https://openverse.org/image/e4bc1645-d8d2-413f-af54-925369df7991?q=library -->
+
+		<nav id="main-nav">
+			<ol>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Find a Library</a></li>
+				<li><a href="files.html">Files</a></li>
+			</ol>
+		</nav>
+	</header>
+
+	<main id="pg-main">
+
+		<h2>Book Information</h2>
+		<div id="search-widgets">
+			<input type="search" name="search-input" id="i-search" placeholder="Book Name Here">
+			<!-- https://www.w3schools.com/tags/att_input_placeholder.asp
+			Date used: December 3rd 2023
+			Used to teach me how to put starting text in a search bar -->
+			<input type="button" value="Filter Results" id="i-button">
+		</div>
+
+		
+		<table id="library-table"></table>
+		
+	</main>
+
+	<footer id="pg-footer">
+		<p>&copy; 2023 My Library. All rights reserved.</p>
+	</footer>
+	
+
+
+	<script src="js/data-library.js"></script>
+	<script src="js/scripts.js"></script>
+</div>
+	
+</body>
+</html>
